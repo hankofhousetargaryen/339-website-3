@@ -1,0 +1,415 @@
+/* Starter CSS */
+
+
+
+* {
+    box-sizing: border-box; /* because it’s 2019, jen simmons */
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: #202222;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    min-height: 100vh;
+
+    
+}
+
+h1{
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 600;
+    font-size: 4em;
+    color:#f5f5f5;
+    line-height: 1.2;
+}
+
+h2{
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 600;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color:#f5f5f5;
+}
+
+h2.subheader{ 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color:#f5f5f5;
+    }   
+
+p{
+    font-family: 'Libre Baskerville', serif;
+    color: #202222;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+.enter{
+    height:10px;
+    width:10em;
+    margin-top: 50px;
+    
+}
+.enter a{
+    border: 1px solid #f5f5f5;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #f5f5f5;
+    font-size:1em;
+    border-radius: .8em;
+    letter-spacing: 3px;
+    padding: .5em; 
+    text-align: center;
+    transition: all 0.1s;
+    
+}
+
+.enter a:hover{
+    color: rgb(217, 100, 71);
+    background-color: #f5f5f5;
+    box-shadow: 1px 1px 100px #f5f5f5;
+    transform: scale(1.05);
+}
+
+.small-italics{
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-weight: 100;
+    }
+
+.splash-hero{
+    display: grid;
+    grid-template-rows: 1fr  1fr;
+    grid-template-columns: 1fr auto 1fr;
+    background-image: url(https://images.unsplash.com/photo-1555991910-65b4c0139fdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+    
+}
+
+.inner-splash-hero{
+    padding: 3em;
+    padding-left: 5em;
+    display:grid;
+    grid-column:1;
+    max-width: 60vw;
+}
+
+/* End Splash Page*/
+
+
+.logotype{
+    display: flex;
+    text-transform: none;
+    text-align: center;
+    margin: 5vh auto;
+    justify-content: center;
+}
+
+.logotype a:hover{
+    color: #d94747;
+}
+
+.home-screen-nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    height:10vh;
+    padding:10px;
+    border-radius: 1em;
+    border: 1px solid #ADBCB1;
+    margin: 5vh auto;
+}
+
+.home-screen-nav li,a{
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color:#ADBCB1;
+    list-style: none;
+    text-decoration: none;
+    display: block;
+    transition: all .05s;    
+}
+
+.home-screen-nav li,a:hover{
+    color:#d94747;
+    transform:scale(1.05);
+}
+
+.columns{
+    display: inline-grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 1.2fr 1fr;
+    padding:1vw;
+    background-color: rgba(240, 240, 240, 25%);
+    margin-top: 6vw;
+    border-radius: 2em;
+    max-width:100%;
+    margin-left:1vw;
+    margin-right:1vw;
+    min-height: 60vh;
+}
+
+.columns img{
+    display:flex;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    padding:12px;
+    transition:all .1s ease-in-out;
+    
+}
+
+.columns img:hover{
+    transform: scale(1.03);
+    box-shadow: 1px 1px 50px #202222;
+    transform: scale(1.01);
+    
+}
+
+.games-text a, .vibes-text a, .craft-text a{
+    text-transform:uppercase;
+    text-decoration: none;
+    font-family:"Montserrat", sans-serif;
+    font-weight:400;
+    font-size:1em;
+    letter-spacing: 3px;
+    color: #ADBCB1;
+    
+    
+}
+
+.games-text a:hover, .vibes-text a:hover, .craft-text a:hover{
+    color:#d94747;
+    transform: scale(1.01);
+    
+}
+
+.games-text p, .vibes-text p, .craft-text p{
+    font-family: "Libre Baskerville", serif;
+    color:#f5f5f5;
+    line-height:1.6;
+}
+
+.games{
+    grid-column:1;
+    grid-row:1;
+    border-radius: 2em;
+}
+
+.games-text{
+    grid-column:1;
+    grid-row:2;
+    max-width:28vw;
+    min-width:28vw;
+    margin: 1em;
+}
+
+.vibes{
+    grid-column:2;
+    grid-row:1;
+    border-radius: 2em;
+}
+
+.vibes-text{
+    grid-column:2;
+    grid-row:2;
+    max-width:28vw;
+    min-width:28vw;
+    margin: 1em;
+}
+
+.craft{
+    grid-column:3;
+    grid-row:1;
+    border-radius: 2em;
+}
+
+.craft-text{
+    grid-column:3;
+    grid-row:2;
+    max-width:28vw;
+    min-width:28vw;
+    margin: 1em;
+}
+
+/*End of Main Screen*/
+
+.intro .subheader{
+    color:#ADBCB1;
+}
+
+
+.intro{
+    background-color: rgba(240, 240, 240, 25%);
+    margin: 5vw ;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.intro p{
+    color:#f5f5f5;
+    font-family: "Libre Baskerville", serif;
+    line-height: 1.6em;
+    margin-top: 5px;
+    
+}
+
+.flex-container{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 5vw;
+}
+
+.flex-container li{
+    list-style: none;
+    text-transform: lowercase;
+}
+
+footer{
+    padding-top: 1rem;
+    padding-bottom: 1em;
+    margin-top: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ADBCB1;
+}
+
+footer p {
+    font-size: 1rem;
+    font-weight: 100;
+    color: #202222;    
+}
+    
+@media (min-width: 400px) {
+    
+    .splash-hero {
+        grid-column: 1;
+    }
+    
+    .home-screen-nav{
+        width:90vw;
+        border-radius: 1em;
+        flex-direction:row;
+        height:auto;
+        line-height: 3em;
+        margin: 0 auto;
+    }
+
+    .home-screen-nav a{
+        text-align: center;
+        padding: 10px;
+    }
+
+    .columns{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    .inner-splash-hero {
+        grid-column: 1;
+        }
+
+    .home-screen-nav{
+        width:90vw;
+        border-radius: 1em;
+        flex-direction:row;
+        height:auto;
+        line-height: 3em;
+        margin: 0 auto;
+    }
+    .home-screen-nav a{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        padding: 10px;
+    }
+}
+    /* End Home Screen */
+    /* Begin Photo Grid Page */
+
+    .photo-grid{
+        width: 60%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 1rem;
+        transform: rotate(-45deg);
+    }
+
+    .photo-grid img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        object-position: center;
+        transform: rotate(45deg) scale(1.5); 
+    }
+
+    .outer{
+        overflow: hidden;
+
+    }
+
+    .one{
+        grid-column: 1;
+        grid-row: 1;
+        
+    }
+
+    .two{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .three{
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .four{
+        grid-column: 3;
+        grid-row: 3;
+    }
+
+    .five{
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+
+    /* This is the CSS markup for commenting */
+    
+    /* A one-line comment */
+    
+    /*
+    A comment
+    which stretches
+    over several
+    lines
+    */
+    
+    /* The comment below is used to
+       disable specific styling */
+    
+    /*
+    span {
+      color: blue;
+      font-size: 1.5em;
+    }
+    */
+    /* highlight the item and use Command + slash to comment something out. */
