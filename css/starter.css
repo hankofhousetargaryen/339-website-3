@@ -392,7 +392,47 @@ footer p {
     }
 
 
-    /* This is the CSS markup for commenting */
+    /* End of image grid page*/
+
+
+    /* Start of parallax page*/
+
+    .parallax-item{
+        padding: 5rem;
+        min-width: 100vw, fit-content;
+        height: 100vh;
+        position: relative;
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow:hidden;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+
+    .parallax-item h1{
+        position: relative;
+        padding-top: 80vh;
+        
+    }
+
+    .p-item-1{
+        background-image: url(https://images.unsplash.com/photo-1515852216175-927860d2be80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80);
+        margin-top: 1rem auto 0rem;
+    }
+
+    .p-item-2{
+        background-image: url(https://images.unsplash.com/photo-1551218370-44f5d7748b18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+        margin:none;
+    }
+
+    .p-item-3{
+        background-image: url(https://images.unsplash.com/photo-1531545514256-b1400bc00f31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80);
+        margin:none;
+
+    }
     
     /* A one-line comment */
     
