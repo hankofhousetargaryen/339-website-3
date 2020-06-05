@@ -12,7 +12,6 @@ html {
     background-color: #202222;
     scroll-behavior: smooth;
     text-rendering: optimizeLegibility;
-    min-height: 100vh;
 
     
 }
@@ -33,6 +32,9 @@ h2{
     letter-spacing: 3px;
     color:#f5f5f5;
 }
+
+
+
 
 h2.subheader{ 
     font-family: 'Montserrat', sans-serif;
@@ -84,9 +86,6 @@ p{
     }
 
 .splash-hero{
-    display: grid;
-    grid-template-rows: 1fr  1fr;
-    grid-template-columns: 1fr auto 1fr;
     background-image: url(https://images.unsplash.com/photo-1555991910-65b4c0139fdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
     
 }
@@ -95,8 +94,9 @@ p{
     padding: 3em;
     padding-left: 5em;
     display:grid;
-    grid-column:1;
+    grid-column:;
     max-width: 60vw;
+    min-height: 100vh;
 }
 
 /* End Splash Page*/
@@ -124,7 +124,7 @@ p{
     padding:10px;
     border-radius: 1em;
     border: 1px solid #ADBCB1;
-    margin: 5vh auto;
+    margin: 5vh;
 }
 
 .home-screen-nav li,a{
@@ -154,8 +154,8 @@ p{
     margin-top: 6vw;
     border-radius: 2em;
     max-width:100%;
-    margin-left:1vw;
-    margin-right:1vw;
+    margin-left:5vw;
+    margin-right:5vw;
     min-height: 60vh;
 }
 
@@ -292,53 +292,8 @@ footer p {
     color: #202222;    
 }
     
-@media (min-width: 400px) {
-    
-    .splash-hero {
-        grid-column: 1;
-    }
-    
-    .home-screen-nav{
-        width:90vw;
-        border-radius: 1em;
-        flex-direction:row;
-        height:auto;
-        line-height: 3em;
-        margin: 0 auto;
-    }
 
-    .home-screen-nav a{
-        text-align: center;
-        padding: 10px;
-    }
 
-    .columns{
-        display:grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-}
-
-@media (min-width: 1000px) {
-    .inner-splash-hero {
-        grid-column: 1;
-        }
-
-    .home-screen-nav{
-        width:90vw;
-        border-radius: 1em;
-        flex-direction:row;
-        height:auto;
-        line-height: 3em;
-        margin: 0 auto;
-    }
-    .home-screen-nav a{
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        padding: 10px;
-    }
-}
     /* End Home Screen */
     /* Begin Photo Grid Page */
 
@@ -414,8 +369,14 @@ footer p {
 
     .parallax-item h1{
         position: relative;
-        padding-top: 80%;
+        padding-top: 70vh;
         
+    }
+
+    .parallax-item p{
+        position: relative;
+        color:white;
+
     }
 
     .p-item-1{
@@ -433,6 +394,80 @@ footer p {
         margin:none;
 
     }
+
+    .p-item-4{
+        background-image: url(https://images.unsplash.com/photo-1563941406054-949225931d52?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+        margin:none;
+    }
+
+    .p-item-5{
+        background-image: url(https://images.unsplash.com/photo-1585103573228-fd5cc6f5d233?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+        margin:none;
+
+    }
+
+    .parallax-item h1{
+        color: #f5f5f5#;;
+    }
+
+
+
+    .details p{
+        color: #ADBCB1;
+        padding: 5rem;
+    }
+
+    @media all and (max-width: 800px) {
+    
+        .splash-hero {
+            grid-column: 1;
+        }
+        
+        .home-screen-nav{
+            width:90vw;
+            border-radius: 1em;
+            flex-direction:row;
+            height:auto;
+            line-height: 3em;
+            margin: 0 auto;
+            border-radius: 20px;
+        }
+    
+        .home-screen-nav a{
+            text-align: center;
+            padding: 10px;
+        }
+    
+        .columns{
+            display:inline-block;
+            padding:5vw;
+            background-color: rgba(240, 240, 240, 25%);
+            margin: 5vw 5vw 0;
+            border-radius: 2em;
+            max-width:100%;
+            min-height: 50vh;
+            justify-content: center;
+        }
+        .craft-text, .vibes-text, .games-text{ 
+            display: inline;
+            margin: 5vw;
+            margin-left: 100px;
+        }
+    
+        .photo-grid{
+            display: inline;
+            margin: 5vw;
+
+        }
+
+        .parallax-item h1{
+            position: relative;
+            padding-top: 60vh;
+            
+        }
+    
+       
+        }
     
     /* A one-line comment */
     
